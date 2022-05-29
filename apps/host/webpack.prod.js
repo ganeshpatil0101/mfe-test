@@ -5,7 +5,7 @@ const commonConfig = require('./webpack.common');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const deps = require("./package.json").dependencies;
 
-const domain = process.env.PRODUCTION_DOMAIN;
+// const domain = process.env.PRODUCTION_DOMAIN;
 
 const prodConfig = {
     mode: 'production',
@@ -22,7 +22,7 @@ const prodConfig = {
         name: "host",
         filename: "remoteEntry.js",
             remotes: {
-                counter: `counter@${domain}/remoteEntry.js`
+                counter: `counter@https://react-remote.netlify.app/remoteEntry.js`
             },
         exposes: {},
         shared: {
