@@ -12,5 +12,5 @@ body {
 .counter h2{
   display: inline-block;
   margin: 0;
-  color: blueviolet
+  color: red
 }

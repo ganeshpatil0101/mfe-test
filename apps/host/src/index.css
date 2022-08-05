@@ -9,8 +9,12 @@ body {
   margin-top: 20px;
 }
 
-.counter h2{
+/* .counter h2{
   display: inline-block;
   margin: 0;
   color: blueviolet
+} */
+
+.host-title {
+  color:'blue';
 }
